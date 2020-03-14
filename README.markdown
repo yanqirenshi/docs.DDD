@@ -1,18 +1,20 @@
 # docs.DDD
 
-# 要素
-- ユビキタス言語
-- モデル駆動設計
-- レイヤ化アーキテクチャ
-- 利口なUI
-- エンティティ
-- 値オブジェクト
-- サービス
-- ファクトリ
-- リポジトリ
-- 制約
+モデル駆動設計 (Domain-driven design) の自習ノート
 
 # サイトマップ
+
+- Home
+  - ユビキタス言語 (Ubiquitous Language)
+  - モデル駆動設計 (Domain-driven design)
+  - レイヤ化アーキテクチャ (Layered Architecture)
+  - 利口なUI
+  - エンティティ (Entities)
+  - 値オブジェクト (Value Objects)
+  - サービス (Services)
+  - ファクトリ (Factories)
+  - リポジトリ (Repositories)
+  - 制約 (Aggregates)
 
 # Demendencies
 
@@ -24,7 +26,8 @@
 - [deepmerge](https://www.npmjs.com/package/deepmerge)
 - [moment](https://momentjs.com/)
 
-|                        |                         |
+
+| to                     | from                    |
 |------------------------|-------------------------|
 | eslint-plugin-flowtype | eslint-config-react-app |
 | typescript             | react-scripts           |
