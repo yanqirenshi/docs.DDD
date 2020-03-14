@@ -2,9 +2,9 @@ import React from 'react';
 
 function SectionUbiquitousLanguage () {
   return (
-    <div>
-      <p>SectionUbiquitousLanguage</p>
-    </div>
+      <div className="section">
+        <p>SectionUbiquitousLanguage</p>
+      </div>
   );
 }
 

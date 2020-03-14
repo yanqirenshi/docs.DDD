@@ -2,7 +2,7 @@ import React from 'react';
 
 function SectionLayeredArchitecture () {
     return (
-        <div>
+        <div className="section">
           <p>SectionLayeredArchitecture</p>
         </div>
     );

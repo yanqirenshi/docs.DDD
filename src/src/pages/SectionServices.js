@@ -2,7 +2,7 @@ import React from 'react';
 
 function SectionServices () {
     return (
-        <div>
+        <div className="section">
           <p>SectionServices</p>
         </div>
     );

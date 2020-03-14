@@ -2,7 +2,7 @@ import React from 'react';
 
 function SectionAggregates () {
     return (
-        <div>
+        <div className="section">
           <p>SectionAggregates</p>
         </div>
     );

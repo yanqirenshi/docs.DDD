@@ -2,7 +2,7 @@ import React from 'react';
 
 function SectionRepositories () {
     return (
-        <div>
+        <div className="section">
           <p>SectionRepositories</p>
         </div>
     );

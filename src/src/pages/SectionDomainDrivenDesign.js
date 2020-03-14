@@ -2,7 +2,7 @@ import React from 'react';
 
 function SectionDomainDrivenDesign () {
     return (
-        <div>
+        <div className="section">
           <p>SectionDomainDrivenDesign</p>
         </div>
     );
