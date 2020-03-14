@@ -4,17 +4,24 @@
 
 # サイトマップ
 
-- Home
-  - ユビキタス言語 (Ubiquitous Language)
-  - モデル駆動設計 (Domain-driven design)
-  - レイヤ化アーキテクチャ (Layered Architecture)
-  - 利口なUI
-  - エンティティ (Entities)
-  - 値オブジェクト (Value Objects)
-  - サービス (Services)
-  - ファクトリ (Factories)
-  - リポジトリ (Repositories)
-  - 制約 (Aggregates)
+## Page: Record of reading (Home)
+
+```
++-------------------------------+
+|                               |
+| Section                       |
+|   |                           |
+|   O----------o--o--> Chapger  |
+|   |          |  |             |
+|   O-- - -    |  :             |
+|   |          |  :             |
+|   O-- - -    V                |
+|   |                           |
+|   V                           |
+|                               |
++-------------------------------+
+```
+
 
 # Demendencies
 
@@ -32,7 +39,7 @@
 | eslint-plugin-flowtype | eslint-config-react-app |
 | typescript             | react-scripts           |
 | node-sass              | sass-loader             |
-| sass                   |                         |
-| fibers                 |                         |
+| sass                   | 〃                      |
+| fibers                 | 〃                      |
 | typescript             | tsutils                 |
-|                        |                         |
+
