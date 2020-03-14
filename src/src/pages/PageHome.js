@@ -3,16 +3,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactFullpage from '@fullpage/react-fullpage';
 
-import SectionUbiquitousLanguage from './SectionUbiquitousLanguage';
-import SectionDomainDrivenDesign from './SectionDomainDrivenDesign';
-import SectionLayeredArchitecture from './SectionLayeredArchitecture';
-import SectionEntities from './SectionEntities';
-import SectionValueObjects from './SectionValueObjects';
-import SectionServices from './SectionServices';
-import SectionFactories from './SectionFactories';
-import SectionRepositories from './SectionRepositories';
-import SectionAggregates from './SectionAggregates';
 
+import Section1 from './Section1';
+import Section2 from './Section2';
+import Section3 from './Section3';
+import Section4 from './Section4';
 
 function PageHome () {
     return (
@@ -25,15 +20,10 @@ function PageHome () {
               return (
                   <ReactFullpage.Wrapper>
 
-                    <SectionUbiquitousLanguage />
-                    <SectionDomainDrivenDesign />
-                    <SectionLayeredArchitecture />
-                    <SectionEntities />
-                    <SectionValueObjects />
-                    <SectionServices />
-                    <SectionFactories />
-                    <SectionRepositories />
-                    <SectionAggregates />
+                    <Section1 />
+                    <Section2 />
+                    <Section3 />
+                    <Section4 />
 
                   </ReactFullpage.Wrapper>
               );

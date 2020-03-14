@@ -3,7 +3,8 @@ import React from 'react';
 function SectionFactories () {
     return (
         <div className="section">
-          <p>SectionFactories</p>
+          <p>ファクトリ</p>
+          <p>FACTORIES</p>
         </div>
     );
 }
