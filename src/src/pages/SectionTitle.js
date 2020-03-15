@@ -5,6 +5,7 @@ function SectionTitle (props) {
         root: {
             fontSize: '66px',
             fontWeight: 'bold',
+            fontFamily: 'Sawarabi Mincho',
         },
     };
 

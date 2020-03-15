@@ -6,11 +6,15 @@ function CapterIndex (props) {
             display: 'flex',
             justifyContent: 'center',
         },
+        chapter_title: {
+            fontFamily: 'Sawarabi Mincho',
+        },
         title: {
             ja: {
                 fontSize: '22px',
                 lineHeight: '22px',
                 fontWeight: 'bold',
+                fontFamily: 'Sawarabi Mincho',
             },
             en: {
                 fontSize: '11px',
@@ -24,7 +28,7 @@ function CapterIndex (props) {
 
     return (
         <div>
-          <h1 className="title is-6">
+          <h1 className="title is-6" style={style.chapter_title}>
             {title.label}
           </h1>
 
