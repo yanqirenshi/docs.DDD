@@ -18,10 +18,10 @@ import ChapterAggregates from './section2/ChapterAggregates';
 import ChapterFactories from './section2/ChapterFactories';
 import ChapterRepositories from './section2/ChapterRepositories';
 
-function Section2 () {
+function Section2 (props) {
     return (
         <div className="section">
-          <ChapterSection2Overview />
+          <ChapterSection2Overview source={props.source} />
 
           <ChapterLayeredArchitecture />
 

@@ -32,10 +32,10 @@ import ChapterResponsibleityLayers from './section4/ChapterResponsibleityLayers'
 import ChapterKnowledgeLevel from './section4/ChapterKnowledgeLevel';
 import ChapterPluggableComponentFramework from './section4/ChapterPluggableComponentFramework';
 
-function Section4 () {
+function Section4 (props) {
     return (
         <div className="section">
-          <ChapterSection4Overview />
+          <ChapterSection4Overview source={props.source} />
 
           <ChapterBoundedContext />
           <ChapterContinuousIntegration />

@@ -10,10 +10,10 @@ import ChapterSection1Overview from './section1/ChapterSection1Overview';
 import ChapterUbiquitousLanguage from './section1/ChapterUbiquitousLanguage';
 import ChapterDomainDrivenDesign from './section1/ChapterDomainDrivenDesign';
 
-function Section1 () {
+function Section1 (props) {
     return (
         <div className="section">
-          <ChapterSection1Overview />
+          <ChapterSection1Overview source={props.source}/>
 
           <ChapterUbiquitousLanguage />
           <ChapterDomainDrivenDesign />

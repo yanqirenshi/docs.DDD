@@ -3,16 +3,9 @@ import React from 'react';
 import SectionTitle from '../SectionTitle';
 import CapterIndex from '../CapterIndex';
 
-function ChapterSection1Overview () {
-    let articles = {
-        capter03: {
-            title: { label: 'ドメインとモデルを結びつける' },
-            contents: [
-                { code: 'ChapterUbiquitousLanguage', title: { ja: 'ユビキタス言語', en: 'UBIQUITOUS LANGUAGE', },  },
-                { code: 'ChapterDomainDrivenDesign', title: { ja: 'ドメイン駆動設計', en: 'DOMAIN-DRIVEN DESIGN', },  },
-            ],
-        },
-    };
+function ChapterSection1Overview (props) {
+    let title = props.source.title;
+    let articles = props.source.capters;
 
     let style = {
         contents_root: {
@@ -23,7 +16,7 @@ function ChapterSection1Overview () {
 
     return (
         <div className="slide">
-          <SectionTitle label="ドメインモデルを機能させる"/>
+          <SectionTitle label={title.label}/>
 
           <div style={style.contents_root}>
             <CapterIndex source={articles.capter03}/>

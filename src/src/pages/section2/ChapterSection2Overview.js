@@ -3,32 +3,9 @@ import React from 'react';
 import SectionTitle from '../SectionTitle';
 import CapterIndex from '../CapterIndex';
 
-function ChapterSection2Overview () {
-    let articles = {
-        capter04: {
-            title: { label: 'ドメインを隔離する' },
-            contents: [
-                { code: 'ChapterLayeredArchitecture', title: { ja: 'レイヤー化アーキテクチャ', en: 'LAYERED ARCHITECTURE', },  },
-            ],
-        },
-        capter05: {
-            title: { label: 'ソフトウェアで表現されたモデル' },
-            contents: [
-                { code: 'ChapterEntities',     title: { ja: 'エンティティ', en: 'ENTITIES', },  },
-                { code: 'ChapterValueObjects', title: { ja: '値オブジェクト', en: 'VALUE OBJECTS', },  },
-                { code: 'ChapterServices',     title: { ja: 'サービス', en: 'SERVICES', },  },
-                { code: 'ChapterModules',      title: { ja: 'モジュール', en: 'MODULES', },  },
-            ],
-        },
-        capter06: {
-            title: { label: 'ドメイン・オブジェクトのライフサイクル' },
-            contents: [
-                { code: 'ChapterAggregates',   title: { ja: '集約', en: 'AGGREGATES', },  },
-                { code: 'ChapterFactories',    title: { ja: 'ファクトリ', en: 'FACTORIES', },  },
-                { code: 'ChapterRepositories', title: { ja: 'リポジトリ', en: 'REPOSITORIES', },  },
-            ],
-        },
-    };
+function ChapterSection2Overview (props) {
+    let title = props.source.title;
+    let articles = props.source.capters;
 
     let style = {
         contents_root: {
@@ -42,7 +19,7 @@ function ChapterSection2Overview () {
 
     return (
         <div className="slide">
-          <SectionTitle label="モデル駆動設計の構成要素"/>
+          <SectionTitle label={title.label}/>
 
           <div style={style.contents_root}>
             <CapterIndex source={articles.capter04}/>

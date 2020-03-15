@@ -19,10 +19,10 @@ import ChapterClosureOfOperations from './section3/ChapterClosureOfOperations';
 import ChapterStrategyOfDesignPattern from './section3/ChapterStrategyOfDesignPattern';
 import ChapterCompositeOfDesignPattern from './section3/ChapterCompositeOfDesignPattern';
 
-function Section3 () {
+function Section3 (props) {
     return (
         <div className="section">
-          <ChapterSection3Overview />
+          <ChapterSection3Overview source={props.source} />
 
           <ChapterSpecification />
 
