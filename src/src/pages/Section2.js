@@ -4,30 +4,36 @@ import React from 'react';
 /* 第2部 モデル駆動設計の構成要素 */
 /* ****************************** */
 
+import ChapterSection2Overview from './section2/ChapterSection2Overview';
+
 // 第04章 ドメインを隔離する
-import SectionLayeredArchitecture from './SectionLayeredArchitecture';
+import ChapterLayeredArchitecture from './section2/ChapterLayeredArchitecture';
 // 第05章 ソフトウェアで表現されたモデル
-import SectionEntities from './SectionEntities';
-import SectionValueObjects from './SectionValueObjects';
-import SectionServices from './SectionServices';
-import SectionModules from './SectionModules';
+import ChapterEntities from './section2/ChapterEntities';
+import ChapterValueObjects from './section2/ChapterValueObjects';
+import ChapterServices from './section2/ChapterServices';
+import ChapterModules from './section2/ChapterModules';
 // 第06章 ドメイン・オブジェクトのライフサイクル
-import SectionAggregates from './SectionAggregates';
-import SectionFactories from './SectionFactories';
-import SectionRepositories from './SectionRepositories';
+import ChapterAggregates from './section2/ChapterAggregates';
+import ChapterFactories from './section2/ChapterFactories';
+import ChapterRepositories from './section2/ChapterRepositories';
 
 function Section2 () {
     return (
-        <>
-          <SectionLayeredArchitecture />
-          <SectionEntities />
-          <SectionValueObjects />
-          <SectionServices />
-          <SectionModules />
-          <SectionAggregates />
-          <SectionFactories />
-          <SectionRepositories />
-        </>
+        <div className="section">
+          <ChapterSection2Overview />
+
+          <ChapterLayeredArchitecture />
+
+          <ChapterEntities />
+          <ChapterValueObjects />
+          <ChapterServices />
+          <ChapterModules />
+
+          <ChapterAggregates />
+          <ChapterFactories />
+          <ChapterRepositories />
+        </div>
     );
 }
 
