@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterClosureOfOperations () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterClosureOfOperations (props) {
+    let code = 'ChapterClosureOfOperations';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>閉じた操作</p>
-          <p>CLOSURE OF OPERATIONS</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterAntiCorruptionLayer () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterAntiCorruptionLayer (props) {
+    let code = 'ChapterAntiCorruptionLayer';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>腐敗防止層</p>
-          <p>ANTI-CORRUPTION LAYER</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

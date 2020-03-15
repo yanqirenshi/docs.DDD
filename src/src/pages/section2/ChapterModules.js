@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterModules () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterModules (props) {
+    let code = 'ChapterModules';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>モジュール</p>
-          <p>MODULES</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

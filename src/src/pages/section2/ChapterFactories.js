@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterFactories () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterFactories (props) {
+    let code = 'ChapterFactories';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>ファクトリ</p>
-          <p>FACTORIES</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

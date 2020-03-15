@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterBoundedContext () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterBoundedContext (props) {
+    let code = 'ChapterBoundedContext';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>境界づけられたコンテキスト</p>
-          <p>BOUNDED CONTEXT</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

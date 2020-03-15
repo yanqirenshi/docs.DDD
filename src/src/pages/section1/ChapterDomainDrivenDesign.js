@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterDomainDrivenDesign () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterDomainDrivenDesign (props) {
+    let code = 'ChapterDomainDrivenDesign';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>ドメイン駆動設計</p>
-          <p>DOMAIN DRIVEN DESIGN</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

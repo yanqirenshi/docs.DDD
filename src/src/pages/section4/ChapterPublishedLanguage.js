@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterPublishedLanguage () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterPublishedLanguage (props) {
+    let code = 'ChapterPublishedLanguage';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>公表された言語</p>
-          <p>PUBLISHED LANGUAGE</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

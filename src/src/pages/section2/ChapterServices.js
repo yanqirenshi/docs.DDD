@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterServices () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterServices (props) {
+    let code = 'ChapterServices';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>サービス</p>
-          <p>SERVICES</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

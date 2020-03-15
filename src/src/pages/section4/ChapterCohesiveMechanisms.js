@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterCohesiveMechanisms () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterCohesiveMechanisms (props) {
+    let code = 'ChapterCohesiveMechanisms';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>凝縮されたメカニズム</p>
-          <p>COHESIVE MECHANISMS</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

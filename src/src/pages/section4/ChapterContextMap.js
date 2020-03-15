@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterContextMap () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterContextMap (props) {
+    let code = 'ChapterContextMap';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>コンテキスト・マップ</p>
-          <p>CONTEXT MAP</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

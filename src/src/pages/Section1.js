@@ -13,10 +13,10 @@ import ChapterDomainDrivenDesign from './section1/ChapterDomainDrivenDesign';
 function Section1 (props) {
     return (
         <div className="section">
-          <ChapterSection1Overview source={props.source}/>
+          <ChapterSection1Overview source={props.source} />
 
-          <ChapterUbiquitousLanguage />
-          <ChapterDomainDrivenDesign />
+          <ChapterUbiquitousLanguage source={props.source.chapters.capter03} />
+          <ChapterDomainDrivenDesign source={props.source.chapters.capter03} />
         </div>
     );
 }

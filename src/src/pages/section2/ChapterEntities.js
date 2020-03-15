@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterEntities () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterEntities (props) {
+    let code = 'ChapterEntities';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>エンティティ</p>
-          <p>ENTITIES</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

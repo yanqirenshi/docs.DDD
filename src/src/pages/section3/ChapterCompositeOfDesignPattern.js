@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterCompositeOfDesignPattern () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterCompositeOfDesignPattern (props) {
+    let code = 'ChapterCompositeOfDesignPattern';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>コンポジット</p>
-          <p>COMPOSITE OF DESIGN PATTERN</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

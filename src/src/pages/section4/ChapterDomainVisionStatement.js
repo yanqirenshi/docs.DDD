@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterDomainVisionStatement () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterDomainVisionStatement (props) {
+    let code = 'ChapterDomainVisionStatement';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>ドメイン・ビジョン声明文</p>
-          <p>DOMAIN VISION STATEMENT</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

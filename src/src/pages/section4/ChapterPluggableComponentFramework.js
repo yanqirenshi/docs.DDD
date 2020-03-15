@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterPluggableComponentFramework () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterPluggableComponentFramework (props) {
+    let code = 'ChapterPluggableComponentFramework';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>着脱可能コンポーネントのフレームワーク</p>
-          <p>PLUGGABLE COMPONEN TFRAMEWORK</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

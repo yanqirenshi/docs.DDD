@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterAggregates () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterAggregates (props) {
+    let code = 'ChapterAggregates';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>集約</p>
-          <p>Aggregates</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

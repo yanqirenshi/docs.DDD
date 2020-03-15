@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterEvolvingOrder () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterEvolvingOrder (props) {
+    let code = 'ChapterEvolvingOrder';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>進化する秩序</p>
-          <p>EVOLVING ORDER</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

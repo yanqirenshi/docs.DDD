@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterSharedKernel () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterSharedKernel (props) {
+    let code = 'ChapterSharedKernel';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>共有カーネル</p>
-          <p>SHARED KERNEL</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

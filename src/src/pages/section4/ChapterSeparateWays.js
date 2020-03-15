@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterSeparateWays () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterSeparateWays (props) {
+    let code = 'ChapterSeparateWays';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>別々の道</p>
-          <p>SEPARATE WAYS</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

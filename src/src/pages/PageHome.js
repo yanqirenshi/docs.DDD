@@ -11,7 +11,7 @@ function PageHome () {
     let sections = {
         section1: {
             title: { label: 'ドメインモデルを機能させる' },
-            capters: {
+            chapters: {
                 capter03: {
                     title: { label: 'ドメインとモデルを結びつける' },
                     contents: [
@@ -23,7 +23,7 @@ function PageHome () {
         },
         section2: {
             title: { label: 'モデル駆動設計の構成要素' },
-            capters: {
+            chapters: {
                 capter04: {
                     title: { label: 'ドメインを隔離する' },
                     contents: [
@@ -51,7 +51,7 @@ function PageHome () {
         },
         section3: {
             title: { label: 'より深い洞察へ向うリファクタリング' },
-            capters: {
+            chapters: {
                 capter09: {
                     title: { label: '暗黙的な概念を明示的にする' },
                     contents: [
@@ -80,7 +80,7 @@ function PageHome () {
         },
         section4: {
             title: { label: '戦略的設計' },
-            capters: {
+            chapters: {
                 capter14: {
                     title: { label: 'モデルの整合性を維持する' },
                     contents: [

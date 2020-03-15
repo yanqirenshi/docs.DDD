@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterRepositories () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterRepositories (props) {
+    let code = 'ChapterRepositories';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>リポジトリ</p>
-          <p>REPOSITORIES</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

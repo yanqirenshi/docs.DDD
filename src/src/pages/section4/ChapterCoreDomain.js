@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterCoreDomain () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterCoreDomain (props) {
+    let code = 'ChapterCoreDomain';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>コア・ドメイン</p>
-          <p>CORE DOMAIN</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

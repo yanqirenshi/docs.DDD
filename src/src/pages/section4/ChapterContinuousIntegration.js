@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterContinuousIntegration () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterContinuousIntegration (props) {
+    let code = 'ChapterContinuousIntegration';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>継続的な統合</p>
-          <p>CONTINUOUS INTEGRATION</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

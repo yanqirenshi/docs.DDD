@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterSegregatedCore () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterSegregatedCore (props) {
+    let code = 'ChapterSegregatedCore';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>隔離されたコア</p>
-          <p>SEGREGATED CORE</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

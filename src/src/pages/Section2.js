@@ -23,16 +23,16 @@ function Section2 (props) {
         <div className="section">
           <ChapterSection2Overview source={props.source} />
 
-          <ChapterLayeredArchitecture />
+          <ChapterLayeredArchitecture source={props.source.chapters.capter04} />
 
-          <ChapterEntities />
-          <ChapterValueObjects />
-          <ChapterServices />
-          <ChapterModules />
+          <ChapterEntities source={props.source.chapters.capter05} />
+          <ChapterValueObjects source={props.source.chapters.capter05} />
+          <ChapterServices source={props.source.chapters.capter05} />
+          <ChapterModules source={props.source.chapters.capter05} />
 
-          <ChapterAggregates />
-          <ChapterFactories />
-          <ChapterRepositories />
+          <ChapterAggregates source={props.source.chapters.capter06} />
+          <ChapterFactories source={props.source.chapters.capter06} />
+          <ChapterRepositories source={props.source.chapters.capter06} />
         </div>
     );
 }

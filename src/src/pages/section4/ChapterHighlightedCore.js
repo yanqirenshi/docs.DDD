@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterHighlightedCore () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterHighlightedCore (props) {
+    let code = 'ChapterHighlightedCore';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>強調されたコア</p>
-          <p>HIGHLIGHTED CORE</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

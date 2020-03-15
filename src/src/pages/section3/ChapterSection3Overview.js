@@ -5,7 +5,7 @@ import CapterIndex from '../CapterIndex';
 
 function ChapterSection3Overview (props) {
     let title = props.source.title;
-    let articles = props.source.capters;
+    let articles = props.source.chapters;
 
     let style = {
         contents_root: {

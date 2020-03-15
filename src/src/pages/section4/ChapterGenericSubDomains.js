@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterGenericSubDomains () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterGenericSubDomains (props) {
+    let code = 'ChapterGenericSubDomains';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>汎用サブドメイン</p>
-          <p>GENERIC SUBDOMAINS</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

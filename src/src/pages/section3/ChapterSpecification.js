@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterSpecification () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterSpecification (props) {
+    let code = 'ChapterSpecification';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>仕様</p>
-          <p>SPECIFICATION</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

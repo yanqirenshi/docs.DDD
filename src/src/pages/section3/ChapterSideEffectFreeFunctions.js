@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterSideEffectFreeFunctions () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterSideEffectFreeFunctions (props) {
+    let code = 'ChapterSideEffectFreeFunctions';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>副作用のない関数</p>
-          <p>SIDE-EFFECT FREE FUNCTIONS</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

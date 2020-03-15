@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterLayeredArchitecture () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterLayeredArchitecture (props) {
+    let code = 'ChapterLayeredArchitecture';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>レイヤー化アーキテクチャ</p>
-          <p>LAYERED ARCHITECTURE</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

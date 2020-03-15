@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterStandaloneClasses () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterStandaloneClasses (props) {
+    let code = 'ChapterStandaloneClasses';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>独立したクラス</p>
-          <p>STANDALONE CLASSES</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

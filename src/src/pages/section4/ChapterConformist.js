@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterConformist () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterConformist (props) {
+    let code = 'ChapterConformist';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>順応者</p>
-          <p>CONFORMIST</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

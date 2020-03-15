@@ -37,32 +37,32 @@ function Section4 (props) {
         <div className="section">
           <ChapterSection4Overview source={props.source} />
 
-          <ChapterBoundedContext />
-          <ChapterContinuousIntegration />
-          <ChapterContextMap />
-          <ChapterSharedKernel />
-          <ChapterCostomerSupplierDevelopmentTeams />
-          <ChapterConformist />
-          <ChapterAntiCorruptionLayer />
-          <ChapterSeparateWays />
-          <ChapterOpenHostService />
-          <ChapterPublishedLanguage />
+          <ChapterBoundedContext source={props.source.chapters.capter14} />
+          <ChapterContinuousIntegration source={props.source.chapters.capter14} />
+          <ChapterContextMap source={props.source.chapters.capter14} />
+          <ChapterSharedKernel source={props.source.chapters.capter14} />
+          <ChapterCostomerSupplierDevelopmentTeams source={props.source.chapters.capter14} />
+          <ChapterConformist source={props.source.chapters.capter14} />
+          <ChapterAntiCorruptionLayer source={props.source.chapters.capter14} />
+          <ChapterSeparateWays source={props.source.chapters.capter14} />
+          <ChapterOpenHostService source={props.source.chapters.capter14} />
+          <ChapterPublishedLanguage source={props.source.chapters.capter14} />
 
 
-          <ChapterCoreDomain />
-          <ChapterGenericSubDomains />
-          <ChapterDomainVisionStatement />
-          <ChapterHighlightedCore />
-          <ChapterCohesiveMechanisms />
-          <ChapterSegregatedCore />
-          <ChapterAbstractCore />
+          <ChapterCoreDomain source={props.source.chapters.capter15} />
+          <ChapterGenericSubDomains source={props.source.chapters.capter15} />
+          <ChapterDomainVisionStatement source={props.source.chapters.capter15} />
+          <ChapterHighlightedCore source={props.source.chapters.capter15} />
+          <ChapterCohesiveMechanisms source={props.source.chapters.capter15} />
+          <ChapterSegregatedCore source={props.source.chapters.capter15} />
+          <ChapterAbstractCore source={props.source.chapters.capter15} />
 
 
-          <ChapterEvolvingOrder />
-          <ChapterSystemMetaphor />
-          <ChapterResponsibleityLayers />
-          <ChapterKnowledgeLevel />
-          <ChapterPluggableComponentFramework />
+          <ChapterEvolvingOrder source={props.source.chapters.capter16} />
+          <ChapterSystemMetaphor source={props.source.chapters.capter16} />
+          <ChapterResponsibleityLayers source={props.source.chapters.capter16} />
+          <ChapterKnowledgeLevel source={props.source.chapters.capter16} />
+          <ChapterPluggableComponentFramework source={props.source.chapters.capter16} />
         </div>
     );
 }

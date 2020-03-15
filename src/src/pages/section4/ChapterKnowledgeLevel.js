@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterKnowledgeLevel () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterKnowledgeLevel (props) {
+    let code = 'ChapterKnowledgeLevel';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>知識レベル</p>
-          <p>KNOWLEDGE LEVEL</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

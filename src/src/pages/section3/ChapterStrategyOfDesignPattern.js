@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterStrategyOfDesignPattern () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterStrategyOfDesignPattern (props) {
+    let code = 'ChapterStrategyOfDesignPattern';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>ストラテジー</p>
-          <p>STRATEGY OF DESIGN PATTERN</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

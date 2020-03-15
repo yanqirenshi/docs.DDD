@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterConceptualContours () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterConceptualContours (props) {
+    let code = 'ChapterConceptualContours';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>概念の輪郭</p>
-          <p>CONCEPTUAL CONTOURS</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

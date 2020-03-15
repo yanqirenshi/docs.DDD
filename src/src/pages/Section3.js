@@ -24,19 +24,17 @@ function Section3 (props) {
         <div className="section">
           <ChapterSection3Overview source={props.source} />
 
-          <ChapterSpecification />
+          <ChapterSpecification source={props.source.chapters.capter09} />
 
-          <ChapterIntentionRevealingInterfaces />
-          <ChapterSideEffectFreeFunctions />
-          <ChapterAssertions />
-          <ChapterConceptualContours />
+          <ChapterIntentionRevealingInterfaces source={props.source.chapters.capter10} />
+          <ChapterSideEffectFreeFunctions source={props.source.chapters.capter10} />
+          <ChapterAssertions source={props.source.chapters.capter10} />
+          <ChapterConceptualContours source={props.source.chapters.capter10} />
+          <ChapterStandaloneClasses source={props.source.chapters.capter10} />
+          <ChapterClosureOfOperations source={props.source.chapters.capter10} />
 
-
-          <ChapterStandaloneClasses />
-          <ChapterClosureOfOperations />
-
-          <ChapterStrategyOfDesignPattern />
-          <ChapterCompositeOfDesignPattern />
+          <ChapterStrategyOfDesignPattern source={props.source.chapters.capter12} />
+          <ChapterCompositeOfDesignPattern source={props.source.chapters.capter12} />
         </div>
     );
 }

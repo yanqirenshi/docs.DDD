@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterAssertions () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterAssertions (props) {
+    let code = 'ChapterAssertions';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>表明</p>
-          <p>ASSERTIONS</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterValueObjects () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterValueObjects (props) {
+    let code = 'ChapterValueObjects';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>値オブジェクト</p>
-          <p>VALUE OBJECTS</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

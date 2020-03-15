@@ -1,12 +1,16 @@
 import React from 'react';
 
-function ChapterUbiquitousLanguage () {
-  return (
-      <div className="slide">
-        <p>ユビキタス言語</p>
-        <p>UBIQUITOUS LANGUAGE</p>
-      </div>
-  );
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterUbiquitousLanguage (props) {
+    let code = 'ChapterUbiquitousLanguage';
+    let chapters = props.source.contents;
+
+    return (
+        <div className="slide">
+          <ChapterTitle code={code} chapters={chapters}/>
+        </div>
+    );
 }
 
 export default ChapterUbiquitousLanguage;

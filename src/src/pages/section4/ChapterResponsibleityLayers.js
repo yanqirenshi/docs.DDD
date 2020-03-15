@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterResponsibleityLayers () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterResponsibleityLayers (props) {
+    let code = 'ChapterResponsibleityLayers';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>職責のレイヤ</p>
-          <p>RESPONSIBLEITY LAYERS</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

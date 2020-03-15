@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterSystemMetaphor () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterSystemMetaphor (props) {
+    let code = 'ChapterSystemMetaphor';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>システムのメタファ</p>
-          <p>SYSTEM METAPHOR</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }

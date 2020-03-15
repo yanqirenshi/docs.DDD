@@ -1,10 +1,14 @@
 import React from 'react';
 
-function ChapterIntentionRevealingInterfaces () {
+import ChapterTitle from '../ChapterTitle';
+
+function ChapterIntentionRevealingInterfaces (props) {
+    let code = 'ChapterIntentionRevealingInterfaces';
+    let chapters = props.source.contents;
+
     return (
         <div className="slide">
-          <p>意図の明白なインターフェース</p>
-          <p>INTENTION REVEALING INTERFACES</p>
+          <ChapterTitle code={code} chapters={chapters}/>
         </div>
     );
 }
