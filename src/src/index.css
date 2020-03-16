@@ -17,3 +17,7 @@ code {
 /* Google Fonts */
 /* ************ */
 @import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
+
+html {
+  background: #F0F7FF;
+}

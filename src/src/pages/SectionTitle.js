@@ -6,6 +6,7 @@ function SectionTitle (props) {
             fontSize: '66px',
             fontWeight: 'bold',
             fontFamily: 'Sawarabi Mincho',
+            color: '#333333',
         },
     };
 
